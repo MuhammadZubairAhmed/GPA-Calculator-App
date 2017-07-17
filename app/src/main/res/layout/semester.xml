@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        tools:context="app.com.example.android.gpacalculator.MainActivity">
+        <!--  Header  Starts-->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="0dip"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/header1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="0dip"
+                android:paddingBottom="0dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semester"
+                    android:layout_marginLeft="15dip"
+                    android:textSize="15sp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="top"
+                    />
+                <Spinner
+                    android:id="@+id/semester0"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/sem"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:text="GPA"
+                    android:paddingRight="5dp"
+                    android:textSize="15sp"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/GPA"
+                    android:text="0.0"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/header2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dip"
+                android:paddingBottom="0dip"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="Semester credits"
+                    android:textSize="15sp"
+                    />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SemesterCredits"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="50dp"
+                    android:text="0"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="90dip">
+            <LinearLayout
+                tools:context="app.com.example.android.courtcounter.MainActivity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="Course"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+                <EditText
+                    android:id="@+id/Course1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+                <EditText
+                    android:id="@+id/Course2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:id="@+id/Course3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+
+                <EditText
+                    android:id="@+id/Course4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+                <EditText
+                    android:id="@+id/Course5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+                <EditText
+                    android:id="@+id/Course6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                tools:context="app.com.example.android.courtcounter.MainActivity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Credits"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+                <Spinner
+                    android:id="@+id/CrCourse1"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Credit"/>
+                <Spinner
+                    android:id="@+id/CrCourse2"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Credit"
+                    android:layout_marginTop="5dp" />
+
+                <Spinner
+                    android:id="@+id/CrCourse3"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Credit"
+                    android:layout_marginTop="5dp" />
+
+                <Spinner
+                    android:id="@+id/CrCourse4"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Credit"
+                    android:layout_marginTop="5dp" />
+                <Spinner
+                    android:id="@+id/CrCourse5"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Credit"
+                    android:layout_marginTop="5dp" />
+                <Spinner
+                    android:id="@+id/CrCourse6"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Credit"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                tools:context="app.com.example.android.courtcounter.MainActivity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:paddingLeft="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="Grade"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-medium"
+                    />
+
+                <Spinner
+                    android:id="@+id/GrCourse1"
+                    android:layout_width="85dp"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Grades"/>
+                <Spinner
+                    android:id="@+id/GrCourse2"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Grades"
+                    android:layout_marginTop="5dp" />
+
+                <Spinner
+                    android:id="@+id/GrCourse3"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Grades"
+                    android:layout_marginTop="5dp" />
+
+                <Spinner
+                    android:id="@+id/GrCourse4"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Grades"
+                    android:layout_marginTop="5dp" />
+                <Spinner
+                    android:id="@+id/GrCourse5"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Grades"
+                    android:layout_marginTop="5dp" />
+                <Spinner
+                    android:id="@+id/GrCourse6"
+                    android:layout_width="85dp"
+                    android:layout_height="41dp"
+                    android:spinnerMode="dropdown"
+                    android:entries="@array/Grades"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:textSize="15sp"
+                android:id="@+id/Cal" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Quit"
+                android:textSize="15sp"
+                android:id="@+id/Quit" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

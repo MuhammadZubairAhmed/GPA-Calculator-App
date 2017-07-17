@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        tools:context="app.com.example.android.gpacalculator.MainActivity">
+        <!--  Header  Starts-->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester GPA"
+                android:layout_marginLeft="15dip"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+                android:layout_gravity="top"
+                />
+
+            <EditText
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CGPA"
+                android:text="0.0"
+                android:textSize="25sp"
+
+                android:layout_marginLeft="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dp"
+            android:touchscreenBlocksFocus="false"
+            android:transitionGroup="false"
+            android:layout_marginBottom="500dp"
+            android:layout_marginTop="75dp">
+
+            <TextView
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/credit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="100dip">
+            <LinearLayout
+                tools:context="app.com.example.android.courtcounter.MainActivity"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp">
+
+
+                <Button
+                    android:id="@+id/Semester1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Calculate GPA"
+                    android:singleLine="true"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
