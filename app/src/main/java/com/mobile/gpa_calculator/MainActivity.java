@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent Intent_Semester1 = new Intent(getApplicationContext(), Semester.class);
-                startActivity(Intent_Semester1);
+                startActivity(Intent_Semester1 );
             }
         });
     }
